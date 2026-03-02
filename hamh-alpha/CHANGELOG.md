@@ -1,8 +1,8 @@
-# v2.1.0-alpha.419
+# v2.1.0-alpha.420
 
 ## Changes
 
-- fix: use OnOffPlugInUnit for on/off-only fans (#229) (3734f69b)
+- feat: add --http-base-path option for reverse proxy subfolder support (#228) (00034e4d)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
