@@ -1,3 +1,11 @@
+## [2.0.30](https://github.com/RiDDiX/home-assistant-matter-hub/compare/v2.0.29...v2.0.30) (2026-03-05)
+
+
+### Bug Fixes
+
+* **#232:** surface API errors instead of silently swallowing them ([6015d5c](https://github.com/RiDDiX/home-assistant-matter-hub/commit/6015d5c61e69b05fd66cd8027ab6f732f0ad7480)), closes [#232](https://github.com/RiDDiX/home-assistant-matter-hub/issues/232)
+* propagate mapped entity changes (battery, humidity, etc.) to Matter endpoints ([14da1bc](https://github.com/RiDDiX/home-assistant-matter-hub/commit/14da1bc47266f5ba2915cc8ffc92f8975c2436ff)), closes [#237](https://github.com/RiDDiX/home-assistant-matter-hub/issues/237)
+
 ## [2.0.29](https://github.com/RiDDiX/home-assistant-matter-hub/compare/v2.0.28...v2.0.29) (2026-03-05)
 
 
