@@ -1,3 +1,18 @@
+## [2.0.31](https://github.com/RiDDiX/home-assistant-matter-hub/compare/v2.0.30...v2.0.31) (2026-03-06)
+
+
+### Bug Fixes
+
+* **#230:** prevent stale HA state from reverting optimistic brightness/color updates ([9e249e6](https://github.com/RiDDiX/home-assistant-matter-hub/commit/9e249e667fcec9b6b621d75ce1c872dede3dc375)), closes [#230](https://github.com/RiDDiX/home-assistant-matter-hub/issues/230)
+* **#240:** route boundary cover targets to open/close regardless of direction ([1729b53](https://github.com/RiDDiX/home-assistant-matter-hub/commit/1729b535ef3e25619664e3b1211de167cc307242)), closes [#prepareMovement](https://github.com/RiDDiX/home-assistant-matter-hub/issues/prepareMovement)
+* fan speed/preset control not working from controllers ([3aba18a](https://github.com/RiDDiX/home-assistant-matter-hub/commit/3aba18a6276e1061f868ef10e3cfd4a3df464f41)), closes [#233](https://github.com/RiDDiX/home-assistant-matter-hub/issues/233)
+* make autoHumidityMapping default-enabled like autoPressureMapping ([8a3eaa6](https://github.com/RiDDiX/home-assistant-matter-hub/commit/8a3eaa6060533dd32df0f8262eab779d1706346e))
+
+
+### Features
+
+* add controller profiles to wizard and area-based bridge setup ([e84ab46](https://github.com/RiDDiX/home-assistant-matter-hub/commit/e84ab46d110ff967686e957fb0776cedc3528614))
+
 ## [2.0.30](https://github.com/RiDDiX/home-assistant-matter-hub/compare/v2.0.29...v2.0.30) (2026-03-05)
 
 
