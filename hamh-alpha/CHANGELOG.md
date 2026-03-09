@@ -1,8 +1,8 @@
-# v2.1.0-alpha.471
+# v2.1.0-alpha.472
 
 ## Changes
 
-- fix(#219): prevent percentSetting restore from overriding Auto mode (cd92c054)
+- revert(#218): restore flat sensor clusters on composed air purifier (277efe33)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
