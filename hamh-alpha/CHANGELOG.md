@@ -1,8 +1,8 @@
-# v2.1.0-alpha.478
+# v2.1.0-alpha.479
 
 ## Changes
 
-- fix: complete plugin system overhaul — load, validate, command forwarding, install paths (c4c09e10)
+- fix: clean up stale sessions on new CASE establishment (#105) (c899c918)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
