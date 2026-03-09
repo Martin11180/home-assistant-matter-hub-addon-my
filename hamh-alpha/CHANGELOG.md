@@ -1,8 +1,9 @@
-# v2.1.0-alpha.465
+# v2.1.0-alpha.466
 
 ## Changes
 
-- feat: add Swedish locale and in-app Translation Editor (f577614c)
+- feat(i18n): add custom language creation, JSON import, and remove language to TranslationEditor (1be4c7a9)
+- feat(i18n): wire useTranslation in all frontend components and sync locale files (40f49fe2)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
