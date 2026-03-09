@@ -1,9 +1,8 @@
-# v2.1.0-alpha.466
+# v2.1.0-alpha.467
 
 ## Changes
 
-- feat(i18n): add custom language creation, JSON import, and remove language to TranslationEditor (1be4c7a9)
-- feat(i18n): wire useTranslation in all frontend components and sync locale files (40f49fe2)
+- fix(#219): set percentSetting/speedSetting to 0 when fan is off (ff467765)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
