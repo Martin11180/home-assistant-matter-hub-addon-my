@@ -1,8 +1,8 @@
-# v2.1.0-alpha.464
+# v2.1.0-alpha.465
 
 ## Changes
 
-- feat: add 5 new languages and translation contribution hint (f2967a71)
+- feat: add Swedish locale and in-app Translation Editor (f577614c)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
