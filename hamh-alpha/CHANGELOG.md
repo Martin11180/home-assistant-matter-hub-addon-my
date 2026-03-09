@@ -1,8 +1,8 @@
-# v2.1.0-alpha.458
+# v2.1.0-alpha.459
 
 ## Changes
 
-- feat: selective mapping profile export with entity picker dialog (05ee2078)
+- docs: add CNCB and pelican1997 to sponsors (3366728b)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
