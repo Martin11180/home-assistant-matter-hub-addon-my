@@ -1,3 +1,75 @@
+## [2.0.32](https://github.com/RiDDiX/home-assistant-matter-hub/compare/v2.0.31...v2.0.32) (2026-03-10)
+
+
+### Bug Fixes
+
+* **#218:** delete standalone sensor endpoints consumed by composed devices ([40237c1](https://github.com/RiDDiX/home-assistant-matter-hub/commit/40237c14257e62baf47f6a2b63c533702b9450d5)), closes [#218](https://github.com/RiDDiX/home-assistant-matter-hub/issues/218)
+* **#218:** expose mappedEntityIds on composed endpoints for WebSocket subscription ([be09431](https://github.com/RiDDiX/home-assistant-matter-hub/commit/be09431865241613c520a24e318c40be84f64b02)), closes [#218](https://github.com/RiDDiX/home-assistant-matter-hub/issues/218)
+* **#218:** use sub-endpoints for sensor clusters on composed air purifier ([e8cd716](https://github.com/RiDDiX/home-assistant-matter-hub/commit/e8cd716551d23ce6d817755fd6c3f27006e86398)), closes [#218](https://github.com/RiDDiX/home-assistant-matter-hub/issues/218)
+* **#219:** cross-cluster OnOff↔FanControl sync per Matter spec §4.4.6.6.1 ([13b9abb](https://github.com/RiDDiX/home-assistant-matter-hub/commit/13b9abbe9358ccbcf8c62b22fe6f2a290903a5c9)), closes [#219](https://github.com/RiDDiX/home-assistant-matter-hub/issues/219)
+* **#219:** prevent percentSetting restore from overriding Auto mode ([cd92c05](https://github.com/RiDDiX/home-assistant-matter-hub/commit/cd92c05442e0dfc51648767ceea02e810323471d)), closes [#219](https://github.com/RiDDiX/home-assistant-matter-hub/issues/219) [#225](https://github.com/RiDDiX/home-assistant-matter-hub/issues/225)
+* **#219:** protect optimistic onOff from stale HA state reverts ([ee1ce15](https://github.com/RiDDiX/home-assistant-matter-hub/commit/ee1ce15cc6018db11a2baa9bfc01b45b28465394)), closes [#219](https://github.com/RiDDiX/home-assistant-matter-hub/issues/219) [#230](https://github.com/RiDDiX/home-assistant-matter-hub/issues/230)
+* **#219:** set fanMode=Off when fan is off regardless of preset_mode ([e008070](https://github.com/RiDDiX/home-assistant-matter-hub/commit/e0080702fd64d7d9ea0be7e0f0c5305daf9da53a)), closes [#219](https://github.com/RiDDiX/home-assistant-matter-hub/issues/219)
+* **#219:** set percentSetting/speedSetting to 0 when fan is off ([ff46776](https://github.com/RiDDiX/home-assistant-matter-hub/commit/ff467765250b740f9fd7e302e9a628f02654320c)), closes [#219](https://github.com/RiDDiX/home-assistant-matter-hub/issues/219) [#225](https://github.com/RiDDiX/home-assistant-matter-hub/issues/225)
+* **#230:** replace blanket cooldown with expected-value matching ([5d09c2d](https://github.com/RiDDiX/home-assistant-matter-hub/commit/5d09c2d1ba017fb413c37eb8aba771043970c6df)), closes [#230](https://github.com/RiDDiX/home-assistant-matter-hub/issues/230)
+* **#242:** add deprecated 'label' type to matcher schema for backward compat ([baa63b4](https://github.com/RiDDiX/home-assistant-matter-hub/commit/baa63b4b80035791f9e3983ad9d68f4df3dd48ae)), closes [#242](https://github.com/RiDDiX/home-assistant-matter-hub/issues/242)
+* add upload size limit and restrict install-local path traversal ([fd70aea](https://github.com/RiDDiX/home-assistant-matter-hub/commit/fd70aea58d37311ff4db76458fe5516e8e96518f))
+* clean up stale sessions on new CASE establishment ([#105](https://github.com/RiDDiX/home-assistant-matter-hub/issues/105)) ([c899c91](https://github.com/RiDDiX/home-assistant-matter-hub/commit/c899c918ebef09ce97362cc9e9f5ac43d012090f))
+* complete plugin system overhaul — load, validate, command forwarding, install paths ([c4c09e1](https://github.com/RiDDiX/home-assistant-matter-hub/commit/c4c09e104cdfb7fa1c380a085fcb0d976b138012))
+* correct GitHub repo URL in update-check endpoint ([ad0d6e2](https://github.com/RiDDiX/home-assistant-matter-hub/commit/ad0d6e290efb71812d46c826464d463a9b761651))
+* document unhandled rejection limitation in SafePluginRunner ([d0dee2d](https://github.com/RiDDiX/home-assistant-matter-hub/commit/d0dee2d9e5e83c51507b9b37fe74c4c046c006e3))
+* improve tgz package name detection using dependency diff ([94e0678](https://github.com/RiDDiX/home-assistant-matter-hub/commit/94e067805211f8e7d1dca87180aa4b0a2a384659))
+* plugin endpoint state wiring, light turnOn domain check, plugin runner cleanup ([4ee7ccb](https://github.com/RiDDiX/home-assistant-matter-hub/commit/4ee7ccb71147d6f7128ba1ef8cf807f608d80ca2))
+* remove deprecated alexaPreserveBrightnessOnTurnOn and vacuumMinimalClusters feature flags ([5736bf5](https://github.com/RiDDiX/home-assistant-matter-hub/commit/5736bf5b906f4726ee5ab729a79840a45bd273cc))
+* remove non-functional Matterbridge adapter and false compatibility claims ([7548ded](https://github.com/RiDDiX/home-assistant-matter-hub/commit/7548dedc18e652a929a4c7392c9da20053f06bbd))
+* rewrite example plugin as plain JS (no build step needed) ([c54e79d](https://github.com/RiDDiX/home-assistant-matter-hub/commit/c54e79d9fde2169db1f019aa6aa8c97dc25ec348))
+* safe JSON response parsing to prevent cryptic proxy errors ([#222](https://github.com/RiDDiX/home-assistant-matter-hub/issues/222)) ([c03104f](https://github.com/RiDDiX/home-assistant-matter-hub/commit/c03104fb5d6c1fd0bd2c323129d0bf79d00b9e49))
+* share PluginRegistry and PluginInstaller instances instead of duplicating ([4eb512c](https://github.com/RiDDiX/home-assistant-matter-hub/commit/4eb512c6358dee2dfe8c09c7a5a07866977b5812))
+* skip redundant tilt action on downOrClose/upOrOpen for KNX covers ([#246](https://github.com/RiDDiX/home-assistant-matter-hub/issues/246)) ([6bd432e](https://github.com/RiDDiX/home-assistant-matter-hub/commit/6bd432e659e1ce0d287298c3b8af0027a808c87f))
+* validate plugin manifest before import and track started state for safe shutdown ([25ac9c5](https://github.com/RiDDiX/home-assistant-matter-hub/commit/25ac9c5d83c2619da78f6f3142f63b2deaf357d5))
+
+
+### Features
+
+* add 5 new languages and translation contribution hint ([f2967a7](https://github.com/RiDDiX/home-assistant-matter-hub/commit/f2967a71f5d04a85eb83f3014464880f5d167fc8))
+* add Area Setup to dashboard quick navigation ([9abeaa7](https://github.com/RiDDiX/home-assistant-matter-hub/commit/9abeaa73eb3aad61065769c7ceccff1bd1062b35))
+* add aria-label attributes to interactive UI elements ([3a37f23](https://github.com/RiDDiX/home-assistant-matter-hub/commit/3a37f2351275ae59530f8088d44c57e4db4cc035))
+* add ConfirmDialog for destructive actions ([f948c8b](https://github.com/RiDDiX/home-assistant-matter-hub/commit/f948c8b64e5d91bb4b1809db7a52fea9c97ef7e1))
+* add distinct Motion Sensor (PIR) device type for binary_sensor ([#244](https://github.com/RiDDiX/home-assistant-matter-hub/issues/244)) ([fd6ba35](https://github.com/RiDDiX/home-assistant-matter-hub/commit/fd6ba354c64ab6e397e162db9291ffce5f6bb886))
+* add extended AQ sensors (NO2, O3, formaldehyde, radon, PM1, CO) ([bdc8241](https://github.com/RiDDiX/home-assistant-matter-hub/commit/bdc82418254b91fc8c2d4855bdc46f03f0189a14))
+* add floating language switcher with flags ([ee20785](https://github.com/RiDDiX/home-assistant-matter-hub/commit/ee207859bd8c8d66d01eeb2565f4add4a20074c8))
+* add frontend unit test infrastructure and initial tests ([0fe6ac1](https://github.com/RiDDiX/home-assistant-matter-hub/commit/0fe6ac18fc01f7d5a4acfb7eb34ac6c6db3c785b))
+* add i18n foundation with react-i18next, EN+DE translations ([573f11e](https://github.com/RiDDiX/home-assistant-matter-hub/commit/573f11e030c511146ecbee3c47989cba9fb0a3fe))
+* add mapping profile export/import for community sharing (P1.4) ([a71ffe9](https://github.com/RiDDiX/home-assistant-matter-hub/commit/a71ffe92992e6757eec13e406e81803ead6f6383))
+* add matter.js spec-based endpoint cluster validation ([62b839a](https://github.com/RiDDiX/home-assistant-matter-hub/commit/62b839a0b01067ca7c98fd5b52a974de6abee505))
+* add Rain Sensor device type for binary_sensor entities ([9ed657c](https://github.com/RiDDiX/home-assistant-matter-hub/commit/9ed657cee34cad790b8efc49fdd0f7614cfc436f))
+* add standalone electrical sensor device type ([d07f9d1](https://github.com/RiDDiX/home-assistant-matter-hub/commit/d07f9d11ad0d8c7962103b79eed0f7419a893365))
+* add Swedish locale and in-app Translation Editor ([f577614](https://github.com/RiDDiX/home-assistant-matter-hub/commit/f577614ca53056f54a03c2392b647b7f9e31239a))
+* add unavailability indicator to endpoint tree view ([e0ac880](https://github.com/RiDDiX/home-assistant-matter-hub/commit/e0ac88012fec89bae39b362ce2ae85e09d000fad))
+* broaden entity isolation to handle more error patterns ([a29859a](https://github.com/RiDDiX/home-assistant-matter-hub/commit/a29859ad28c148e72176536bfd5e2375278a75ef))
+* cross-fabric diagnostics with per-fabric metadata ([b99869f](https://github.com/RiDDiX/home-assistant-matter-hub/commit/b99869f2f058a12cf41b11ae2ad41b98520d4eae))
+* customizable dashboard widgets with reorder and visibility ([88866c1](https://github.com/RiDDiX/home-assistant-matter-hub/commit/88866c1b67d403376d6f195e5e01c82244d9ec19))
+* **frontend:** add fabric tooltip, pairing hint, wizard text, and active nav state ([44f2fac](https://github.com/RiDDiX/home-assistant-matter-hub/commit/44f2facaf4f8f5acf2db7d02fbaf22df894c4a4f))
+* graceful shutdown on SIGTERM/SIGINT ([b39b9b6](https://github.com/RiDDiX/home-assistant-matter-hub/commit/b39b9b6f7e36568883cc9719183a4ef5c339883d))
+* **i18n:** add custom language creation, JSON import, and remove language to TranslationEditor ([1be4c7a](https://github.com/RiDDiX/home-assistant-matter-hub/commit/1be4c7a9ce85a1a482c7d7f4df2d90e54019d221))
+* **i18n:** wire useTranslation in all frontend components and sync locale files ([40f49fe](https://github.com/RiDDiX/home-assistant-matter-hub/commit/40f49fe20ca98439e86976f05a1a0bf7ef21c613))
+* per-entity cluster diagnostics with auto-mapping tags, device type IDs, WCAG AA contrast fix ([10285fc](https://github.com/RiDDiX/home-assistant-matter-hub/commit/10285fc29e9485f2bb5997114b8ded38d2ce44e5))
+* plugin system with fault isolation, UI, Matterbridge adapter and npm install/uninstall ([f2ab2ef](https://github.com/RiDDiX/home-assistant-matter-hub/commit/f2ab2eff162b263d87ac3a002165a98dbc789709))
+* populate per-entity cluster diagnostics in DiagnosticService ([ba74108](https://github.com/RiDDiX/home-assistant-matter-hub/commit/ba7410836b3d6b25675151540d71ee0cb3cd4e06))
+* selective mapping profile export with entity picker dialog ([05ee207](https://github.com/RiDDiX/home-assistant-matter-hub/commit/05ee2078d6d4d572e5d4cc3e321f80018bc8893e))
+* show bridge startup order on dashboard (P0.4) ([8ac0f4b](https://github.com/RiDDiX/home-assistant-matter-hub/commit/8ac0f4bf5409e280a9546268242714a50d5a6d2f)), closes [#N](https://github.com/RiDDiX/home-assistant-matter-hub/issues/N)
+* support Adaptive Lighting color pre-staging ([e3f2106](https://github.com/RiDDiX/home-assistant-matter-hub/commit/e3f2106717df59a5da56fbe0d63cf9408a6aed39))
+* update check endpoint and UpdateChecker component ([b74e5d4](https://github.com/RiDDiX/home-assistant-matter-hub/commit/b74e5d4615a0beff05b6ca48de5d9f3e9b37073c))
+* version mismatch detection and disconnected banner ([c8b0ad1](https://github.com/RiDDiX/home-assistant-matter-hub/commit/c8b0ad1f164174ad614da69a08af82982ad9a272))
+* wire up i18n for BridgeDetailsPage ([5292abf](https://github.com/RiDDiX/home-assistant-matter-hub/commit/5292abf8e453512441d42b88a17b075b165c6848))
+* wire up i18n for HealthDashboard ([97de0ea](https://github.com/RiDDiX/home-assistant-matter-hub/commit/97de0ead739a67b17bfc50d250d87ce8ae4c11fc))
+* wire up i18n for StatusIndicator, ErrorBoundary, and DashboardPage ([09e2982](https://github.com/RiDDiX/home-assistant-matter-hub/commit/09e2982ed85893476a4eb5ce043d849efe1869d1))
+
+
+### Reverts
+
+* **#218:** restore flat sensor clusters on composed air purifier ([277efe3](https://github.com/RiDDiX/home-assistant-matter-hub/commit/277efe338c56f72e8f89cc3a2fbc9835d483f594)), closes [#218](https://github.com/RiDDiX/home-assistant-matter-hub/issues/218)
+
 ## [2.0.31](https://github.com/RiDDiX/home-assistant-matter-hub/compare/v2.0.30...v2.0.31) (2026-03-06)
 
 
