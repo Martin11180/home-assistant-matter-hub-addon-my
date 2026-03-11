@@ -1,3 +1,15 @@
+## [2.0.33](https://github.com/RiDDiX/home-assistant-matter-hub/compare/v2.0.32...v2.0.33) (2026-03-11)
+
+
+### Bug Fixes
+
+* preserve endpoint numbers across restarts ([#247](https://github.com/RiDDiX/home-assistant-matter-hub/issues/247)) ([c3c796b](https://github.com/RiDDiX/home-assistant-matter-hub/commit/c3c796bd33def51c3424f68f2dd198745448d5ce))
+
+
+### Features
+
+* support binary_sensor battery entities in auto-mapping ([d83eaff](https://github.com/RiDDiX/home-assistant-matter-hub/commit/d83eaff4f72f06e3e95efe2e71633f79ee545d6d))
+
 ## [2.0.32](https://github.com/RiDDiX/home-assistant-matter-hub/compare/v2.0.31...v2.0.32) (2026-03-10)
 
 
