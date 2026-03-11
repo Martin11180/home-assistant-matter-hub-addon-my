@@ -1,8 +1,8 @@
-# v2.1.0-alpha.486
+# v2.1.0-alpha.487
 
 ## Changes
 
-- fix: always auto-map battery entity for vacuum endpoints (#237) (29b724a2)
+- feat: add automatic backup with retention policy and snapshot management (1af8330c)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
