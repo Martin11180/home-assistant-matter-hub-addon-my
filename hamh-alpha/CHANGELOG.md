@@ -1,13 +1,13 @@
-# v2.1.0-alpha.494
+# v2.1.0-alpha.495
 
 ## Changes
 
-- fix: sort imports in docusaurus.config.ts (675dd8c1)
-- feat: migrate documentation from MyST to Docusaurus (3e2470bd)
-- docs: update plugin system docs with new device types and clusters (ae5e2abe)
-- feat: add tgz upload and local path install to plugins UI (44f3e5ef)
-- fix: harden plugin system (storage debounce, validation, API version check) (03789acc)
-- feat: expand plugin device types and fix endpoint typing (5764b5eb)
+- docs: add hamhPluginApiVersion to plugin docs and example, document local install limitation (e8f72a3f)
+- test: add onAttributeWrite callback preservation test (5b0e74b2)
+- fix: use bridge vendorId for plugin endpoints instead of test vendor (b105a8a8)
+- fix: validate plugin endpoint types against Matter spec (10bc4a5b)
+- fix: fix docusaurus build - convert MyST admonitions and internal links (67033bd2)
+- chore: add docusaurus build artifacts to gitignore (8c325f60)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
