@@ -1,8 +1,8 @@
-# v2.1.0-alpha.500
+# v2.1.0-alpha.501
 
 ## Changes
 
-- fix: broadcast bridge updates after auto-refresh and await onRefresh (#256) (87392be9)
+- fix: include device labels, area, name and model in registry fingerprint (adba53d1)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
