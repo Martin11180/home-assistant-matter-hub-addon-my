@@ -1,3 +1,37 @@
+## [2.0.35](https://github.com/RiDDiX/home-assistant-matter-hub/compare/v2.0.34...v2.0.35) (2026-03-14)
+
+
+### Bug Fixes
+
+* add missing factories for dimmable_plugin_unit, contact_sensor, occupancy_sensor and remove non-functional controller types ([23b2d63](https://github.com/RiDDiX/home-assistant-matter-hub/commit/23b2d6366765e0c69e45c304d37f86446d739d44))
+* broadcast bridge updates after auto-refresh and await onRefresh ([#256](https://github.com/RiDDiX/home-assistant-matter-hub/issues/256)) ([87392be](https://github.com/RiDDiX/home-assistant-matter-hub/commit/87392be9add13c35a896843a7075a3ec2227c987))
+* bypass matter.js isDeepEqual for mapped entity updates ([#237](https://github.com/RiDDiX/home-assistant-matter-hub/issues/237)) ([ef15bb6](https://github.com/RiDDiX/home-assistant-matter-hub/commit/ef15bb61a91abe877accd079293f24387f5c875b))
+* correct contact sensor Open/Closed display in HAMH UI ([#254](https://github.com/RiDDiX/home-assistant-matter-hub/issues/254)) ([5c47998](https://github.com/RiDDiX/home-assistant-matter-hub/commit/5c479988eb7c2c1c24240e4e2601f46722753c61))
+* downgrade misleading battery warning for vacuums with attribute fallback ([#255](https://github.com/RiDDiX/home-assistant-matter-hub/issues/255)) ([ee75860](https://github.com/RiDDiX/home-assistant-matter-hub/commit/ee75860032a8c71000cdcf0107f39421f64c92ea))
+* fix docusaurus build - convert MyST admonitions and internal links ([67033bd](https://github.com/RiDDiX/home-assistant-matter-hub/commit/67033bd214be89ade907bf8f49d7caf36c3b5395))
+* guard against null matcher value in patternToRegex ([ea7c76e](https://github.com/RiDDiX/home-assistant-matter-hub/commit/ea7c76e20bd8e472ba036225fd2dd592abf391b6))
+* handle string battery attributes for Rest980/Roomba vacuums ([#255](https://github.com/RiDDiX/home-assistant-matter-hub/issues/255)) ([f2b1d45](https://github.com/RiDDiX/home-assistant-matter-hub/commit/f2b1d45122aa28297023aa6e553715f291763d10))
+* harden plugin system (storage debounce, validation, API version check) ([03789ac](https://github.com/RiDDiX/home-assistant-matter-hub/commit/03789acc09507ce1e581ec7ce5e9a3a553c6730a))
+* include device labels, area, name and model in registry fingerprint ([a62ae04](https://github.com/RiDDiX/home-assistant-matter-hub/commit/a62ae0462a4a8ad20eef05fcdd876e63ffdfb87d))
+* include entity labels and area_id in registry fingerprint ([#243](https://github.com/RiDDiX/home-assistant-matter-hub/issues/243)) ([b51561e](https://github.com/RiDDiX/home-assistant-matter-hub/commit/b51561e4befa162c720ffa308be34b8cc478d316))
+* make scripts momentary and fix autoReset optimistic guard conflict ([#253](https://github.com/RiDDiX/home-assistant-matter-hub/issues/253)) ([8cf7ede](https://github.com/RiDDiX/home-assistant-matter-hub/commit/8cf7ede98fd37fc747fdc57734a2ed2b8d07c7f9))
+* remove legacy MyST docs build from release workflow ([e2c1a7f](https://github.com/RiDDiX/home-assistant-matter-hub/commit/e2c1a7fe5cf39a4fa7aaed0c413ed878614a7ea4))
+* sort imports in docusaurus.config.ts ([675dd8c](https://github.com/RiDDiX/home-assistant-matter-hub/commit/675dd8c13b983990083a534b1d9dea1a38e4cc6e))
+* use bridge vendorId for plugin endpoints instead of test vendor ([b105a8a](https://github.com/RiDDiX/home-assistant-matter-hub/commit/b105a8a86e849edf5ac20903853074e2b7b51976))
+* Valetudo segment cleaning sends all rooms instead of selected ones ([9c42932](https://github.com/RiDDiX/home-assistant-matter-hub/commit/9c42932cd4aa0edfb8306d57db4a445f55d29587))
+* validate plugin endpoint types against Matter spec ([10bc4a5](https://github.com/RiDDiX/home-assistant-matter-hub/commit/10bc4a5b892130fa93593bfe9fa94b4a0d81d52b))
+
+
+### Features
+
+* add tgz upload and local path install to plugins UI ([44f3e5e](https://github.com/RiDDiX/home-assistant-matter-hub/commit/44f3e5efc5a437c8be4e2211b45a8468d100d6d3))
+* add valetudoIdentifier input to vacuum entity mapping dialog ([bd6fcfa](https://github.com/RiDDiX/home-assistant-matter-hub/commit/bd6fcfa362d5fb511b5777a096020cf3a43feccf))
+* add valetudoIdentifier mapping for MQTT topic case mismatch ([b046307](https://github.com/RiDDiX/home-assistant-matter-hub/commit/b046307b0577fc2f13299004f34bf8d65a57a86c))
+* **docs:** migrate to Docusaurus with new IA, redirects, and search ([b4dd687](https://github.com/RiDDiX/home-assistant-matter-hub/commit/b4dd687d503e5350775d36cb909beca0a35c28c4))
+* expand plugin device types and fix endpoint typing ([5764b5e](https://github.com/RiDDiX/home-assistant-matter-hub/commit/5764b5eb9e098f435c49b899e041b7985f10d632))
+* migrate documentation from MyST to Docusaurus ([3e2470b](https://github.com/RiDDiX/home-assistant-matter-hub/commit/3e2470bd1b6050003466a87af6bd214025426b2f))
+* support HA 2026.3 vacuum clean area action ([25d86d1](https://github.com/RiDDiX/home-assistant-matter-hub/commit/25d86d17929cc92fb43dffca148f822a9f768b5c))
+
 ## [2.0.34](https://github.com/RiDDiX/home-assistant-matter-hub/compare/v2.0.33...v2.0.34) (2026-03-11)
 
 
