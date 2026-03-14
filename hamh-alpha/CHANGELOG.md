@@ -1,8 +1,8 @@
-# v2.1.0-alpha.506
+# v2.1.0-alpha.507
 
 ## Changes
 
-- feat: add valetudoIdentifier input to vacuum entity mapping dialog (bd6fcfa3)
+- fix: remove legacy MyST docs build from release workflow (e2c1a7fe)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
