@@ -1,8 +1,8 @@
-# v2.1.0-alpha.513
+# v2.1.0-alpha.514
 
 ## Changes
 
-- feat: allow manual temperature/humidity sensor mapping for air purifiers (#265) (fd84277d)
+- fix: use sub-endpoints for composed air purifier to fix FanControl UI (eef46136)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
