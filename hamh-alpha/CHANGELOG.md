@@ -1,8 +1,8 @@
-# v2.1.0-alpha.515
+# v2.1.0-alpha.516
 
 ## Changes
 
-- fix: filter stale CLEAN_AREA entries via vacuum/get_segments (9210f21b)
+- fix: prevent standalone bridging of sensors consumed by composed air purifier (bafbab01)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
