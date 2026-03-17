@@ -1,8 +1,8 @@
-# v2.1.0-alpha.517
+# v2.1.0-alpha.518
 
 ## Changes
 
-- fix: add missing temperatureEntity to mapped entity IDs and diagnostic log for composed skip (2eeb3d8c)
+- fix: force-close dead sessions after subscription loss to recover from WiFi blips (#266) (c4ab6410)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
