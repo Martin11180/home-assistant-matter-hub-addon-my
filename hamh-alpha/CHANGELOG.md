@@ -1,8 +1,8 @@
-# v2.1.0-alpha.523
+# v2.1.0-alpha.524
 
 ## Changes
 
-- fix: skip climate.turn_on when thermostat is already on (#269) (34a275ac)
+- fix: persist composedEntities in entity-mapping API PUT handler (#220) (102668bc)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
