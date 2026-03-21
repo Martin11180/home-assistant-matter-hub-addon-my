@@ -1,8 +1,8 @@
-# v2.1.0-alpha.525
+# v2.1.0-alpha.526
 
 ## Changes
 
-- feat: quick link to failed devices from dashboard (#270) (cb50c3ee)
+- fix: include endpoint tree in diagnostic export for composed device debugging (ce8b9a9e)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
