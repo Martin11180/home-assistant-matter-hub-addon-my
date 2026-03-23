@@ -1,9 +1,13 @@
-# v2.1.0-alpha.527
+# v2.1.0-alpha.528
 
 ## Changes
 
-- feat: add battery support for valve and pump endpoints (9d27e2e7)
-- docs: fix incorrect device types, removed feature flags, and behavior descriptions (1a0a8b1e)
+- fix(plugins): resolve biome lint errors in example plugins (47c59f72)
+- docs(plugins): document domain mappings, cloud provider plugins, and error handling improvements (e5a53cf8)
+- feat(plugins): add cloud-mock and broken example plugins (59fb0123)
+- fix(plugins): prevent process crash on unhandled rejections from plugins (9ea38e5f)
+- feat(plugins): wire domain mappings into endpoint creation pipeline (9553efab)
+- feat(plugins): add domain mapping support to plugin API (a773d944)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
