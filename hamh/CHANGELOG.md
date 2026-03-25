@@ -1,3 +1,44 @@
+## [2.0.36](https://github.com/RiDDiX/home-assistant-matter-hub/compare/v2.0.35...v2.0.36) (2026-03-25)
+
+
+### Bug Fixes
+
+* add missing temperatureEntity to mapped entity IDs and diagnostic log for composed skip ([2eeb3d8](https://github.com/RiDDiX/home-assistant-matter-hub/commit/2eeb3d8cddeeee1bc5687dc32413cadca5815efe))
+* consistent import/export icons across UI (Export=↑, Import=↓) ([043c74e](https://github.com/RiDDiX/home-assistant-matter-hub/commit/043c74ec1540666e8a0c6f32e29a15d0f77f4a7a))
+* correct stale targetPosition during external cover movement ([#268](https://github.com/RiDDiX/home-assistant-matter-hub/issues/268)) ([1a0cbaa](https://github.com/RiDDiX/home-assistant-matter-hub/commit/1a0cbaa9adc91728a0f272e35a018d750cc13362))
+* filter stale CLEAN_AREA entries via vacuum/get_segments ([9210f21](https://github.com/RiDDiX/home-assistant-matter-hub/commit/9210f21b32fa24e3e1354e156e0aab615821d5df)), closes [#262](https://github.com/RiDDiX/home-assistant-matter-hub/issues/262)
+* force-close dead sessions after subscription loss to recover from WiFi blips ([#266](https://github.com/RiDDiX/home-assistant-matter-hub/issues/266)) ([c4ab641](https://github.com/RiDDiX/home-assistant-matter-hub/commit/c4ab6410db884998339296415ec40e222b78ebdd))
+* guard DiagnosticService against undefined aggregator in server-mode bridges ([fa9b11e](https://github.com/RiDDiX/home-assistant-matter-hub/commit/fa9b11eaac8195e4438ff02615536cfb1bf4e931))
+* include endpoint tree in diagnostic export for composed device debugging ([ce8b9a9](https://github.com/RiDDiX/home-assistant-matter-hub/commit/ce8b9a9ebd2aace73bab48512d4940b76db6baaf))
+* lint issues in Turkish translation PR [#260](https://github.com/RiDDiX/home-assistant-matter-hub/issues/260) ([6da4a55](https://github.com/RiDDiX/home-assistant-matter-hub/commit/6da4a55a9583f7dbf347d657fcef1e4bfe646392))
+* persist composedEntities in entity-mapping API PUT handler ([#220](https://github.com/RiDDiX/home-assistant-matter-hub/issues/220)) ([102668b](https://github.com/RiDDiX/home-assistant-matter-hub/commit/102668bc53cb52f275335ec50dccc2ce480b3308))
+* **plugins:** prevent process crash on unhandled rejections from plugins ([9ea38e5](https://github.com/RiDDiX/home-assistant-matter-hub/commit/9ea38e5fd26ce7ecb5ae5eddaa530ef2558ac87e))
+* **plugins:** resolve biome lint errors in example plugins ([47c59f7](https://github.com/RiDDiX/home-assistant-matter-hub/commit/47c59f7285d8e45079a4bd8e9e055aa1b07ab400))
+* prevent HeatingOnly on cooling-only thermostat ([#264](https://github.com/RiDDiX/home-assistant-matter-hub/issues/264)) ([9f520c4](https://github.com/RiDDiX/home-assistant-matter-hub/commit/9f520c4de05a56212df5161600e096b35507d22e))
+* prevent standalone bridging of sensors consumed by composed air purifier ([bafbab0](https://github.com/RiDDiX/home-assistant-matter-hub/commit/bafbab015e8acf7180f7526537912008b59b18ca)), closes [#265](https://github.com/RiDDiX/home-assistant-matter-hub/issues/265)
+* reduce dead session timeout to 60s and add per-session stale cleanup ([#266](https://github.com/RiDDiX/home-assistant-matter-hub/issues/266)) ([37e31d9](https://github.com/RiDDiX/home-assistant-matter-hub/commit/37e31d9fc96b61d1702f37e64c87db535902c64b))
+* resolve lint errors in composed endpoint tests and cover formatting ([f63bd49](https://github.com/RiDDiX/home-assistant-matter-hub/commit/f63bd4925881df7bf3ccbc6bf02a934d99ccb8f9))
+* resolve version from package.json before env var ([8191dce](https://github.com/RiDDiX/home-assistant-matter-hub/commit/8191dce9b94ee5c0d81f0bd85e9818a691b7f62f))
+* skip CLEAN_AREA entries with empty segment arrays ([491928d](https://github.com/RiDDiX/home-assistant-matter-hub/commit/491928dbb717daf29600b4420cb1f38a1eb5a6b2))
+* skip climate.turn_on when thermostat is already on ([#269](https://github.com/RiDDiX/home-assistant-matter-hub/issues/269)) ([34a275a](https://github.com/RiDDiX/home-assistant-matter-hub/commit/34a275ac7bdd7a5398c3af87dbee997b7b59384c))
+* trigger mDNS re-announcement after dead session cleanup ([#266](https://github.com/RiDDiX/home-assistant-matter-hub/issues/266)) ([1de74da](https://github.com/RiDDiX/home-assistant-matter-hub/commit/1de74dad092acc5befeba6fd11a6885810d4b6ea))
+* use graceful session close to notify controllers per Matter Spec ([#266](https://github.com/RiDDiX/home-assistant-matter-hub/issues/266)) ([794d925](https://github.com/RiDDiX/home-assistant-matter-hub/commit/794d925692192edd07718677a29851134925feac))
+* use stable keys for composed entity list to satisfy noArrayIndexKey lint ([6f11ef3](https://github.com/RiDDiX/home-assistant-matter-hub/commit/6f11ef391633fb2860db731c606272afa0914f2f))
+* use sub-endpoints for composed air purifier to fix FanControl UI ([eef4613](https://github.com/RiDDiX/home-assistant-matter-hub/commit/eef46136cb8bdf2f5602e10e07c956dc1a829132)), closes [#265](https://github.com/RiDDiX/home-assistant-matter-hub/issues/265)
+
+
+### Features
+
+* add battery support for valve and pump endpoints ([9d27e2e](https://github.com/RiDDiX/home-assistant-matter-hub/commit/9d27e2e7d2958c4333cdc8ce7ac7b60ca5c2f7df))
+* allow manual temperature/humidity sensor mapping for air purifiers ([#265](https://github.com/RiDDiX/home-assistant-matter-hub/issues/265)) ([fd84277](https://github.com/RiDDiX/home-assistant-matter-hub/commit/fd84277d30242abda4403de465d597150eeee7d8))
+* complete German translation and add Russian language ([5167e1f](https://github.com/RiDDiX/home-assistant-matter-hub/commit/5167e1f7e47ff51b9a7c0d3f3cec65725205372a))
+* per-entity coverSwapOpenClose for individual covers ([#263](https://github.com/RiDDiX/home-assistant-matter-hub/issues/263)) ([48a06ed](https://github.com/RiDDiX/home-assistant-matter-hub/commit/48a06ed8ecca8b5dd66988dbc0523ab775ddcb4f))
+* **plugins:** add cloud-mock and broken example plugins ([59fb012](https://github.com/RiDDiX/home-assistant-matter-hub/commit/59fb012377c25969deeb02ce3b530f4a38c1baab))
+* **plugins:** add domain mapping support to plugin API ([a773d94](https://github.com/RiDDiX/home-assistant-matter-hub/commit/a773d944d144d26266fd9ae6ffc6e25d8a59b86a))
+* **plugins:** wire domain mappings into endpoint creation pipeline ([9553efa](https://github.com/RiDDiX/home-assistant-matter-hub/commit/9553efab14aed8d8ca06cfd0bcb337c5fe5656b3))
+* quick link to failed devices from dashboard ([#270](https://github.com/RiDDiX/home-assistant-matter-hub/issues/270)) ([cb50c3e](https://github.com/RiDDiX/home-assistant-matter-hub/commit/cb50c3ee35aa2f6f53025aeecbfdff06c79f0e14))
+* user-defined composed devices via composedEntities mapping ([#220](https://github.com/RiDDiX/home-assistant-matter-hub/issues/220)) ([f936cf4](https://github.com/RiDDiX/home-assistant-matter-hub/commit/f936cf4e12557732ea2d43bda0cd77a6113a57c0))
+
 ## [2.0.35](https://github.com/RiDDiX/home-assistant-matter-hub/compare/v2.0.34...v2.0.35) (2026-03-14)
 
 
