@@ -1,8 +1,8 @@
-# v2.1.0-alpha.538
+# v2.1.0-alpha.539
 
 ## Changes
 
-- docs: document ModeSelect Alexa limitation (#273) and HA 2026.4 naming impact (#276) (1bbb7757)
+- fix: update ServiceArea currentArea during vacuum cleaning for Apple Home status display (05e82d47)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
