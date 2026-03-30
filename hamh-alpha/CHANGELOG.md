@@ -1,8 +1,8 @@
-# v2.1.0-alpha.541
+# v2.1.0-alpha.542
 
 ## Changes
 
-- feat(#55): discrete Open/Close mode for garage and gate covers (30c4b5b7)
+- fix: strip BasicInformationServer from composed sub-endpoints (29db91b3)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
