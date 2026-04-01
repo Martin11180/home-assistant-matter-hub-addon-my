@@ -1,8 +1,8 @@
-# v2.1.0-alpha.551
+# v2.1.0-alpha.552
 
 ## Changes
 
-- fix: guard against missing attributes during HA restart (#286) (02d10baa)
+- fix: persist currentRoomEntity in entity mapping API and storage (04089b4c)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
