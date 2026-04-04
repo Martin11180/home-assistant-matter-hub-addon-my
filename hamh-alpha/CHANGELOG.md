@@ -1,9 +1,9 @@
-# v2.1.0-alpha.556
+# v2.1.0-alpha.557
 
 ## Changes
 
-- fix: biome formatting in sidebars.ts (cfb04136)
-- feat: startup memory guard, reduced log buffer, and low-resource docs (aee56387)
+- fix(alpha): preserve activeAreas during brief state transitions and fix Dreame room_id matching (#281) (f8dcf778)
+- fix(alpha): correct vacuum spec-violating state combinations (#287) (22aaa0d3)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
