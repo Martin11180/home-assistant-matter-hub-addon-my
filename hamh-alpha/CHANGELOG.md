@@ -1,8 +1,8 @@
-# v2.1.0-alpha.591
+# v2.1.0-alpha.592
 
 ## Changes
 
-- fix(#293): honor speaker override for tv media_player entities (255143b7)
+- add zh-tw locale from @albert0v0 (#294) (1f059193)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
