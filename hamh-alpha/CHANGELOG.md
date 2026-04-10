@@ -1,8 +1,8 @@
-# v2.1.0-alpha.588
+# v2.1.0-alpha.589
 
 ## Changes
 
-- fix(#281): preserve progress across mid-session idle in multi-phase cleans (9a64cf50)
+- fix(#287): make rvc reactors offline to produce subscription reports (bd9857f8)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
