@@ -1,8 +1,8 @@
-# v2.1.0-alpha.599
+# v2.1.0-alpha.600
 
 ## Changes
 
-- chore: update matter.js to 0.16.11 (d31c3394)
+- feat: add productNameFromNodeLabel bridge flag for aqara (32c49d34)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
