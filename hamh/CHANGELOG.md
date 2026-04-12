@@ -1,3 +1,10 @@
+## [2.0.40](https://github.com/RiDDiX/home-assistant-matter-hub/compare/v2.0.39...v2.0.40) (2026-04-12)
+
+
+### Bug Fixes
+
+* **#298:** add select, input_select, siren to filter preview domain map ([4804c22](https://github.com/RiDDiX/home-assistant-matter-hub/commit/4804c2258db8c82ce83a236ddbe908e8b25d753c)), closes [#298](https://github.com/RiDDiX/home-assistant-matter-hub/issues/298)
+
 ## [2.0.39](https://github.com/RiDDiX/home-assistant-matter-hub/compare/v2.0.38...v2.0.39) (2026-04-12)
 
 
