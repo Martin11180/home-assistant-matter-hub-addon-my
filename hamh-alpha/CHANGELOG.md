@@ -1,8 +1,8 @@
-# v2.1.0-alpha.608
+# v2.1.0-alpha.609
 
 ## Changes
 
-- fix input_select mode changes not syncing to HA (54ad6ae9)
+- fix healthcheck 401 when basic auth is set (f37365bf)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
