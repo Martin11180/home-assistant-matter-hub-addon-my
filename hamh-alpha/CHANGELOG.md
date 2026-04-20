@@ -1,15 +1,13 @@
-# v2.1.0-alpha.616
+# v2.1.0-alpha.617
 
 ## Changes
 
-- feat: add boolean state configuration cluster on leak freeze rain contact (67da2b7d)
-- feat: wire groups and scenes management on light plug and fan endpoints (220373dd)
-- fix: stop bridges in parallel during stopAll and restartAll (c89101a9)
-- refactor: share cover position adjustment body across read and write (e98e653d)
-- fix: parallelize home assistant registry fetches (6c308272)
-- fix: compare entity attributes with deep-equal not json round-trip (4ff6d945)
-- fix: guard mireds conversion and align colorMode publishing (b858694a)
-- fix: correct thermostat running state for unknown modes and drying (b88ec137)
+- docs: expand developer endpoints page with mapping pipeline (97a9ece6)
+- test: cover sendHaMessage timeout and pass-through behavior (bd33b806)
+- style: tighten comment and log voice across backend (8f5d0a4f)
+- test: cover bridge storage migrations v1 through v5 (1f166312)
+- chore: extend pnpm overrides to clear transitive cves (d65d9d7b)
+- chore: align node version across dockerfiles and docs workflow (4c485d7d)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
