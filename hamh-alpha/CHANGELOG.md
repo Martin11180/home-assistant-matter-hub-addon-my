@@ -1,8 +1,8 @@
-# v2.1.0-alpha.618
+# v2.1.0-alpha.619
 
 ## Changes
 
-- fix(#308): use fan.set_percentage so already-on fans accept speed changes (9b27bbc1)
+- map cover device_class to matter window covering type (#304) (ec6410fb)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
