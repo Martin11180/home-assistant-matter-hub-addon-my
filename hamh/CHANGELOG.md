@@ -1,11 +1,51 @@
+## [2.0.41](https://github.com/RiDDiX/home-assistant-matter-hub/compare/v2.0.40...v2.0.41) (2026-04-23)
+
+
+### Bug Fixes
+
+* **#302:** use DeadFrontBehavior for climate OnOff cluster ([a64fb9b](https://github.com/RiDDiX/home-assistant-matter-hub/commit/a64fb9b4fffa32955bca2fec2db03a72fc1ff8f6)), closes [#302](https://github.com/RiDDiX/home-assistant-matter-hub/issues/302)
+* **#305:** patch matter.js to accept long operational cert serials ([2a08033](https://github.com/RiDDiX/home-assistant-matter-hub/commit/2a08033206cbc45e8f2eb0a3e26e47d99c0a761a)), closes [#305](https://github.com/RiDDiX/home-assistant-matter-hub/issues/305)
+* **#306:** put alexa brightness-reset workaround behind feature flag ([6e3329d](https://github.com/RiDDiX/home-assistant-matter-hub/commit/6e3329d29e47375374e5eb67fce34985797e7ff0)), closes [#306](https://github.com/RiDDiX/home-assistant-matter-hub/issues/306)
+* **#308:** use fan.set_percentage so already-on fans accept speed changes ([9b27bbc](https://github.com/RiDDiX/home-assistant-matter-hub/commit/9b27bbc16e0b90c08f40a5d573cfc1578d66acdc)), closes [#308](https://github.com/RiDDiX/home-assistant-matter-hub/issues/308)
+* **#309:** expose matter auto mode for climate devices with ha auto ([55e7ef6](https://github.com/RiDDiX/home-assistant-matter-hub/commit/55e7ef6df16b3db2d9b5f11f47d1805f5c73a037)), closes [#309](https://github.com/RiDDiX/home-assistant-matter-hub/issues/309)
+* **#311:** apply server-mode root identity via transactional set ([4ed4dfd](https://github.com/RiDDiX/home-assistant-matter-hub/commit/4ed4dfd17269f0d91000f004ea8c9d78bc398d3a)), closes [#311](https://github.com/RiDDiX/home-assistant-matter-hub/issues/311)
+* **#312:** avoid TiltBlindTiltOnly for lift-only blinds ([01e778f](https://github.com/RiDDiX/home-assistant-matter-hub/commit/01e778f92ae439bff70c11fc98ea89b73325f69b)), closes [#312](https://github.com/RiDDiX/home-assistant-matter-hub/issues/312)
+* add 30s timeout to ha sendMessagePromise calls ([a66f150](https://github.com/RiDDiX/home-assistant-matter-hub/commit/a66f1506078235f2aa6b240284eb3add072c1e6f))
+* clear pending debouncers on unregisterAll ([2be9c22](https://github.com/RiDDiX/home-assistant-matter-hub/commit/2be9c22d0a4e69e90832629817292591a30e9205))
+* compare entity attributes with deep-equal not json round-trip ([4ff6d94](https://github.com/RiDDiX/home-assistant-matter-hub/commit/4ff6d94532cdef44472e4f0d981e5f61b66b8ca7))
+* correct thermostat running state for unknown modes and drying ([b88ec13](https://github.com/RiDDiX/home-assistant-matter-hub/commit/b88ec13736ad61fc46025ba67f793b982cbaf3de))
+* dispose AppEnvironment on graceful shutdown ([dc94c77](https://github.com/RiDDiX/home-assistant-matter-hub/commit/dc94c779d52fff65e20bfef279bf59d692ff0ee2))
+* graceful shutdown on api/backup/restart ([01349ad](https://github.com/RiDDiX/home-assistant-matter-hub/commit/01349adc9b35a103c7b1022005e1061368eabe9f))
+* guard auto-refresh against overlapping reloads ([22254a3](https://github.com/RiDDiX/home-assistant-matter-hub/commit/22254a3dc6742e5612cccb71756f94d4e98c99db))
+* guard mireds conversion and align colorMode publishing ([b858694](https://github.com/RiDDiX/home-assistant-matter-hub/commit/b858694a5d03f416f2c974a55aa439b89fa11c7b))
+* log and surface bridge import errors ([cba6296](https://github.com/RiDDiX/home-assistant-matter-hub/commit/cba6296052e0d726412eb76be22c2e6d7345129d))
+* parallelize home assistant registry fetches ([6c30827](https://github.com/RiDDiX/home-assistant-matter-hub/commit/6c3082721a8617325cec6afedcc0a11f35a1470a))
+* reject web-api start on port conflict ([757348d](https://github.com/RiDDiX/home-assistant-matter-hub/commit/757348de16385a60da3c6a4571c5a0082da80bb5))
+* retry transient network errors on ha connect ([a3e2504](https://github.com/RiDDiX/home-assistant-matter-hub/commit/a3e25041aec32229b95827c8bbdc6fae62441350))
+* serialize bridge start and stop lifecycle calls ([d4a0367](https://github.com/RiDDiX/home-assistant-matter-hub/commit/d4a03678c5acd8c9569707801fd05754e7e30ff5))
+* serialize updateStates and detach plugin listeners ([7839ef2](https://github.com/RiDDiX/home-assistant-matter-hub/commit/7839ef2f11d21ec76560a088a92b66953f403a47))
+* stop bridges in parallel during stopAll and restartAll ([c89101a](https://github.com/RiDDiX/home-assistant-matter-hub/commit/c89101a982755ff31ae4ddb30f7af89794e4ae3b))
+* sweep stale optimistic state entries on set ([af22805](https://github.com/RiDDiX/home-assistant-matter-hub/commit/af228056864dfc48c2c14c00df12ad1721aec0d2))
+
+
+### Features
+
+* add boolean state configuration cluster on leak freeze rain contact ([67da2b7](https://github.com/RiDDiX/home-assistant-matter-hub/commit/67da2b7d1a1afb1758bc23af0298a62852aa35d5))
+* wire groups and scenes management on light plug and fan endpoints ([220373d](https://github.com/RiDDiX/home-assistant-matter-hub/commit/220373ddf07ada84564ee65b138a20c6183fa7e4))
+
 ## [2.0.40](https://github.com/RiDDiX/home-assistant-matter-hub/compare/v2.0.39...v2.0.40) (2026-04-12)
+
+
+### HOTFIX (from v2.0.39)
+
+* **#297, #299:** fix crash loop on startup — Node 22 native WebSocket drops connections on both aarch64 (RPi) and amd64; now forces `ws` library ([d5b07c7](https://github.com/RiDDiX/home-assistant-matter-hub/commit/d5b07c7c))
+* **#297:** fix service initialization errors being silently swallowed, causing the process to hang instead of exiting
+* **#297:** registry fetch now waits for WebSocket reconnect between retries with increased retry tolerance
 
 
 ### Bug Fixes
 
 * **#298:** add select, input_select, siren to filter preview domain map ([4804c22](https://github.com/RiDDiX/home-assistant-matter-hub/commit/4804c2258db8c82ce83a236ddbe908e8b25d753c)), closes [#298](https://github.com/RiDDiX/home-assistant-matter-hub/issues/298)
-
-## [2.0.39](https://github.com/RiDDiX/home-assistant-matter-hub/compare/v2.0.38...v2.0.39) (2026-04-12)
 
 
 ### Features
