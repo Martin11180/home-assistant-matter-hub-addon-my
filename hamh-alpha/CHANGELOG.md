@@ -1,10 +1,12 @@
-# v2.1.0-alpha.624
+# v2.1.0-alpha.625
 
 ## Changes
 
-- exclude sourcemaps from npm tarball (0d3e326e)
-- drop unused deps: rxjs, strip-color, lodash (b8b81cdf)
-- remove unused config-validator utility (3e7bbd69)
+- Add translations in Spanish (#314) (7559fa23)
+- Add translations in Spanish (c0600ec9)
+- Merge branch 'alpha' (8f66d600)
+- Merge branch 'alpha' (39cbd0a8)
+- docs: bump to v2.0.38, add aetasoul contributor (585fac42)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
