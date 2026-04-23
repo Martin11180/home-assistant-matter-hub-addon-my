@@ -1,8 +1,8 @@
-# v2.1.0-alpha.622
+# v2.1.0-alpha.623
 
 ## Changes
 
-- fix(#311): apply server-mode root identity via transactional set (4ed4dfd1)
+- fix(#312): avoid TiltBlindTiltOnly for lift-only blinds (01e778f9)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
