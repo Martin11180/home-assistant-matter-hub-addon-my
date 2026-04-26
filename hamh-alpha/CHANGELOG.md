@@ -1,8 +1,8 @@
-# v2.1.0-alpha.636
+# v2.1.0-alpha.637
 
 ## Changes
 
-- fix(#320): use sibling identify button when vacuum.locate unsupported (f722ecec)
+- fix(#322): recognize UWANT/Xiaomi sweep/mop labels (050c45d2)
 
 ---
 ⚠️ **This is an alpha release** - use at your own risk!
