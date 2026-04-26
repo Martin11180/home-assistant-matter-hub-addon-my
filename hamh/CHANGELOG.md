@@ -1,3 +1,11 @@
+## [2.0.42](https://github.com/RiDDiX/home-assistant-matter-hub/compare/v2.0.41...v2.0.42) (2026-04-26)
+
+
+### Bug Fixes
+
+* **#316:** align root softwareVersionString with version ([ae4b33d](https://github.com/RiDDiX/home-assistant-matter-hub/commit/ae4b33d7c60064cfe9b02e3c579f4d1416358d87)), closes [#316](https://github.com/RiDDiX/home-assistant-matter-hub/issues/316)
+* **#319:** clamp climate auto to heat/cool on non-AutoMode bases ([6dd4ded](https://github.com/RiDDiX/home-assistant-matter-hub/commit/6dd4ded1a001eb7e18808cb78c908fb1187a7ad9)), closes [#319](https://github.com/RiDDiX/home-assistant-matter-hub/issues/319)
+
 ## [2.0.41](https://github.com/RiDDiX/home-assistant-matter-hub/compare/v2.0.40...v2.0.41) (2026-04-23)
 
 
