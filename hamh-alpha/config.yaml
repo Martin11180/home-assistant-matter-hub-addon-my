@@ -1,4 +1,4 @@
-version: "2.1.0-alpha.641"
+version: "2.1.0-alpha.642"
 image: ghcr.io/riddix/home-assistant-matter-hub-addon
 slug: hamh-alpha
 name: Home-Assistant-Matter-Hub (Alpha)
@@ -24,4 +24,4 @@ options:
 schema:
   app_log_level: list(silly|debug|info|notice|warn|error|fatal)
   disable_log_colors: bool
-  mdns_network_interface: "str?"
+  mdns_network_interface: "enp6s18"
